@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="diesel" class="abhi.practice.DieselEngine"/>
+	
+	<bean id="petrol" class="abhi.practice.PetrolEngine" primary="true" />
+	
+	<bean id="car" class="abhi.practice.Car" autowire="constructor">
+		<!-- <constructor-arg name="ie" ref="diesel"/> -->
+	</bean>
+	
+	
+	
+
+</beans>
